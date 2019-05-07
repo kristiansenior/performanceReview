@@ -1,0 +1,38 @@
+public class speedConverter {
+
+    public static void main(String[] args) {
+
+        int number = 4;
+        int finishNumber = 20;
+        int totalEvenNumbers = 0;
+        int totalCount = 0;
+
+        while(number <= finishNumber) {
+            number++;
+            if(!isEvenNumber(number)) {
+                continue;
+            }
+            totalEvenNumbers += number;
+            System.out.println("Even number " + number);
+            totalCount++;
+            if (totalCount >= 5) {
+                break;
+            }
+
+        }
+        System.out.println("Total is " + totalEvenNumbers);
+
+    }
+    public static boolean isEvenNumber(int number) {
+
+        if ((number % 2) == 0) {
+            return true;
+
+        } else {
+            return false;
+        }
+    }
+
+
+
+}

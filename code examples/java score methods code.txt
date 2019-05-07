@@ -1,0 +1,35 @@
+public class score {
+
+    public static void main(String[] args) {
+
+        int position = calculateHighScorePosition(1500);
+        displayHighScorePosition("Randall Weams", position);
+
+        position = calculateHighScorePosition(900);
+        displayHighScorePosition("Crimby Crudo", position);
+
+        position = calculateHighScorePosition(400);
+        displayHighScorePosition("Donna K. Meat", position);
+
+        position = calculateHighScorePosition(50);
+        displayHighScorePosition("Barbara Davies", position);
+    }
+
+    public static void displayHighScorePosition(String playerName, int tablePosition) {
+
+        System.out.println(playerName + " managed to get into position " + tablePosition);
+
+    }
+    public static int calculateHighScorePosition (int score){
+        if (score >= 1000){
+            return 1;
+        } else if (score >= 500 && score < 1000){
+            return 2;
+        } else if (score >= 100 && score < 500){
+            return 3;
+        } else {
+            return 4;
+        }
+
+    }
+}
