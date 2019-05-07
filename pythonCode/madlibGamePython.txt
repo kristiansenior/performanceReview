@@ -1,0 +1,22 @@
+STORY = "This morning %s woke up feeling %s. 'It is going to be a %s day!' Outside, a bunch of %ss were protesting to 
+keep %s in stores. They began to %s to the rhythm of the %s, which made all the %ss very %s. Concerned, %s texted %s, who 
+flew %s to %s and dropped %s in a puddle of frozen %s. %s woke up in the year %s, in a world where %ss ruled the world."
+print 'game is starting now'
+name = raw_input("Enter your name: ")
+adjectivea = raw_input("ENTER DESCRIBING WORD 1!: ")
+adjectiveb = raw_input("ENTER DESCRIBING WORD 2!: ")
+adjectivec = raw_input("ENTER DESCRIBING WORD 3!: ")
+verb_a = raw_input("Now enter a verb: ")
+noun_a = raw_input("Enter a thing: ")
+noun_b = raw_input("Enter another thing: ")
+
+animal = raw_input("think of an animal: ")
+food = raw_input("tell me a food: ")
+fruit = raw_input("tell me a fruit: ")
+person = raw_input("tell me a person: ")
+country = raw_input("tell me a country: ")
+dessert = raw_input("tell me dessert you like: ")
+year = raw_input("think of a year: ")
+
+print STORY % (name, adjectivea, adjectiveb, animal, food, verb_a, noun_a, fruit, adjectivec, name, person, name, country,
+ name, dessert, name, year, noun_b)
